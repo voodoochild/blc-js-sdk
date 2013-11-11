@@ -1,0 +1,12 @@
+{
+  "name": "blc-js-sdk",
+  "version": "1.0.0",
+  "main": "src/blc.js",
+  "ignore": [
+    ".jshintrc"
+  ],
+  "dependencies": {
+    "lodash": "~2.3.0",
+    "reqwest": "~0.8.3"
+  }
+}
