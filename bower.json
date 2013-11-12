@@ -1,7 +1,7 @@
 {
   "name": "gw2-js-sdk",
   "version": "1.0.0",
-  "main": "blc.js",
+  "main": "gw2.js",
   "ignore": [
     "package.json",
     "Gruntfile.js",

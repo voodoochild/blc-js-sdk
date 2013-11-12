@@ -5,25 +5,13 @@
     paths: {
       domReady: 'vendor/requirejs-domready/domReady',
       lodash:   'vendor/lodash/dist/lodash.min',
-      reqwest:  'vendor/reqwest/reqwest.min'
+      reqwest:  'vendor/reqwest/reqwest.min',
+      gw2:      'vendor/gw2-js-sdk/gw2.js'
     }
   });
 
-  require(['domReady', 'blc'], function (domReady, blc) {
-    var examples = (function() {
+  require(['domReady', 'gw2'], function (domReady, gw2) {
 
-      function init() {
-        blc.world_names().then(function (response) {
-          console.log(response);
-        });
-      }
-
-      return {
-        init: init
-      };
-    }());
-
-    domReady(examples.init);
   });
 
 }());

@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       },
-      files: ['src/blc.js']
+      files: ['src/gw2.js']
     },
 
     uglify: {
@@ -16,15 +16,7 @@ module.exports = function(grunt) {
                   '<%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: {
-          'blc.js': ['src/blc.js']
-        }
-      },
-      example: {
-        options: {
-          mangle: false
-        },
-        files: {
-          'example/javascripts/blc.js':  ['src/blc.js']
+          'gw2.js': ['src/gw2.js']
         }
       }
     }
@@ -35,5 +27,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Tasks
-  grunt.registerTask('default');
+  grunt.registerTask('default', ['jshint', 'uglify:dist']);
 };
