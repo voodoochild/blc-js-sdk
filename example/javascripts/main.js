@@ -3,7 +3,7 @@
 
   require.config({
     paths: {
-      domReady: 'vendor/domReady',
+      domReady: 'vendor/requirejs-domready/domReady',
       lodash:   'vendor/lodash/dist/lodash.min',
       reqwest:  'vendor/reqwest/reqwest.min'
     }

@@ -1,8 +1,12 @@
 {
-  "name": "blc-js-sdk",
+  "name": "gw2-js-sdk",
   "version": "1.0.0",
-  "main": "src/blc.js",
+  "main": "blc.js",
   "ignore": [
+    "package.json",
+    "Gruntfile.js",
+    "example",
+    "test",
     ".jshintrc"
   ],
   "dependencies": {
